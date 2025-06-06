@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/seiten.css">
+    <link rel="stylesheet" href="../CSS/navigationsleiste.css">
+    <link rel="stylesheet" href="../CSS/newsletter.css">
+    <link rel="stylesheet" href="../CSS/studium-tabelle.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+    <script src="../JavaScript/navigationsleiste.js" defer></script>
+     <script src="../JavaScript/newsletter.js" defer></script>
+    <!-- unten ein weiteres js eingebunden -->
+    <title>Studium Infos</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="hauptnavigation">
+            <div class="logobereich">
+                <a href="../HTML/index.html" class="nav-logo" title="Zurück zum Index!"></a>
+            </div>
+            <div class="navigationsbereich">
+                <div class="nav-oben">
+                    <a href="mailto:21keli1bif@hft-stuttgart.de" class="nav-link" title="Schreib mir eine E-Mail.">
+                        <i class="fa-solid fa-envelope"></i>
+                        21keli1bif@hft-stuttgart.de
+                    </a>
+                    <div class="nav-socials">
+                        <a href="https://github.com" class="nav-link" title="Zu GitHub..."><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://twitter.com" class="nav-link" title="Zu Twitter..."><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://instagram.com" class="nav-link" title="Zu Instagram..."><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="nav-unten">
+                    <div class="navigationspunkte">
+                        <a href="../HTML/index.html" class="nav-punkt nav-link">Home</a>
+                        <a href="../HTML/profil.html" class="nav-punkt nav-link">Profil</a>
+                        <a href="../HTML/freunde.html" class="nav-punkt nav-link">Freunde</a>
+                        <a href="../HTML/studium.html" class="nav-punkt nav-link aktiv">Studium</a>
+                        <a href="../HTML/impressum.html" class="nav-punkt nav-link">Impressum</a>
+                    </div>
+                    <div class="nav-abonnieren">
+                        <button onclick="askMail()">Newsletter abonnieren </button>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="bars-icon" onclick="navigationUmschalten()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Gehoehrt zum Newsletter-Button-->
+    <div id="askMail">
+        <div class="askmail-content">
+            <h2>Bitte geben Sie Ihre Mail-Adresse ein: </h2>
+            <input type="email" placeholder="maxmustermann@hft-stuttgart.de" required>
+            <button onclick="closeMail(), showPopup()">Fertig</button>
+        </div>
+    </div>
+    <div id="popup">
+        <div class="popup-content">
+            <h2>Vielen Dank für Ihr Abonnement!</h2>
+            <p>Sie haben unseren Newsletter erfolgreich abonniert.</p>
+            <button onclick="closePopup()">Schlie&szlig;en</button>
+        </div>
+    </div>
+
+    <div class="hauptbehaelter" id="hauptbehaelterB">
+        <h1> <img id="ueberschrift" src="../ProjektBilder/Studium-Infos.png" alt="'STUDIUM INFOS'"> </h1>
+        <div class="padding-lr20">
+            <img src="../ProjektBilder/studium.jpg" alt="'Ein Bild im Sinne vom Studium'">
+            <p>
+                Dream ist aktuell eingeschrieben an der Hochschule f&uuml;r Technik US. Diese hat unter anderem einen Campus in Orlando, Florida. <span class="after"></span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, a!
+            </p>
+            <strong>Daten des Studenten:</strong>
+            <div style="margin-top: 1%; margin-bottom: 3%;"> 
+                <table class="keine-tabelle">
+                    <tr><td>Name</td> <td class="padding-lr20">Dream</td></tr>
+                    <tr><td>Geschlecht</td> <td class="padding-lr20"> m&auml;nnlich</td></tr>
+                    <tr><td>Matrikelnummer</td> <td class="padding-lr20">012345</td></tr>
+                    <tr><td>Geburtsname</td> <td class="padding-lr20"> Clay</td></tr>
+                    <tr><td>Geburtsdatum</td> <td class="padding-lr20">12.08.1999</td></tr>
+                    <tr><td>Geburtsort</td> <td class="padding-lr20"> Vereinigte Staaten</td></tr>
+                    <tr><td>Staatsangehörigkeit</td> <td class="padding-lr20">America</td></tr>
+                    <tr><td>Strasse</td> <td class="padding-lr20"> Musterstra&szlig;e.123</td></tr>
+                    <tr><td>PLZ</td> <td class="padding-lr20">012345</td></tr>
+                </table>
+            </div>
+
+            <strong>Zusatz:</strong>
+            <div style="margin-top: 1%; margin-bottom: 3%;">
+                <table class="keine-tabelle">
+                    <tr><td>Studienform</td> <td class="padding-lr20">Erststudium</td></tr>
+                    <tr><td>Studientyp</td> <td class="padding-lr20"> Vollzeitstudium</td></tr>
+                    <tr><td>Hörerstatus</td> <td class="padding-lr20">Haupthörer</td></tr>
+                    <tr><td>Fakultät</td> <td class="padding-lr20"> Vermessung, Informatik und Mathematik</td></tr>
+                    <tr><td>Studiengang</td> <td class="padding-lr20">Informatik</td></tr>
+                    <tr><td>Hochschulsemester</td> <td class="padding-lr20"> 3</td></tr>
+                    <tr><td>Urlaubsemester</td> <td class="padding-lr20">0</td></tr>
+                    <tr><td>Praxissemester</td> <td class="padding-lr20">0</td></tr>
+                </table>
+            </div>
+            
+        </div>
+
+        <section>
+            <h2>Studienplan</h2>
+            <p style="text-align: center;">Bei den folgenden Button wird ausgewählt, welcher Tag der Woche angezeigt wird.</p>
+            
+            <div class="buttons">
+                <button class="btn-sp" id="btn_montag">Montag</button> 
+                <button class="btn-sp" id="btn_dienstag">Dienstag</button> 
+                <button class="btn-sp" id="btn_mittwoch">Mittwoch</button> 
+                <button class="btn-sp" id="btn_donnerstag">Donnerstag</button>
+            </div>
+            <div class="stundenplan-container">
+                
+                <div class="blocks">
+                    <div class="montag" id="montag">
+                        <div class="stundenplan">
+                            <div class="stundenplanzeile" id="gruen-schatten-mo">
+                                <div class="stundenplanspalte zeiten">Zeiten</div>
+                                <div class="stundenplanspalte faecher" id="fett-machen-mo">Montag</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">8:00 - 9:30</div>
+                                <div class="stundenplanspalte faecher">Tutorium Mathe | Raum 1/208 </div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">9:45 - 11:15</div>
+                                <div class="stundenplanspalte faecher"></div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">11:30 - 13:00</div>
+                                <div class="stundenplanspalte faecher">Fremdsprachen 2 | Raum 1/208 | Frau Simmonds</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">13:00</div>
+                                <div class="stundenplanspalte faecher">Mittagspause</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">14:00 - 15:30</div>
+                                <div class="stundenplanspalte faecher">Mathematik 2 | Raum 1/309 | Frau Preissler</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">15:45 - 17:15</div>
+                                <div class="stundenplanspalte faecher">Datenstrukturen & Algorithmen | Raum 2/011 | Herr Homberger</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">17:30 - 19:00</div>
+                                <div class="stundenplanspalte faecher">Datenstrukturen & Algorithmen | Raum 2/011 | Herr Homberger</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dienstag" id="dienstag">
+                        <div class="stundenplan">
+                            <div class="stundenplanzeile" id="gruen-schatten-di">
+                                <div class="stundenplanspalte zeiten">Zeiten</div>
+                                <div class="stundenplanspalte faecher" id="fett-machen-di">Dienstag</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">8:00 - 9:30</div>
+                                <div class="stundenplanspalte faecher"></div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">9:45 - 11:15</div>
+                                <div class="stundenplanspalte faecher">Programmieren 2 | Raum 2/201 | Frau Baur</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">11:30 - 13:00</div>
+                                <div class="stundenplanspalte faecher"></div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">13:00</div>
+                                <div class="stundenplanspalte faecher">Mittagspause</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">14:00 - 15:30</div>
+                                <div class="stundenplanspalte faecher">Informatikprojekt 1 | Raum 2/501 | Herr Heusch</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">15:45 - 17:15</div>
+                                <div class="stundenplanspalte faecher">Informatikprojekt 1 | Raum 2/501 | Herr Heusch</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">17:30 - 19:00</div>
+                                <div class="stundenplanspalte faecher">Informatikprojekt 1 | Raum 2/501 | Herr Heusch</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mittwoch" id="mittwoch">
+                        <div class="stundenplan">
+                            <div class="stundenplanzeile" id="gruen-schatten-mi">
+                                <div class="stundenplanspalte zeiten">Zeiten</div>
+                                <div class="stundenplanspalte faecher" id="fett-machen-mi">Mittwoch</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">8:00 - 9:30</div>
+                                <div class="stundenplanspalte faecher">Mathematik 2 | Raum 1/109 | Frau Preissler</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">9:45 - 11:15</div>
+                                <div class="stundenplanspalte faecher">Projektmanagement 1 | 1/211 | Herr Bartsch</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">11:30 - 13:00</div>
+                                <div class="stundenplanspalte faecher">Projektmanagement 1 | 1/211 | Herr Bartsch</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">13:00</div>
+                                <div class="stundenplanspalte faecher">Mittagspause</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">14:00 - 15:30</div>
+                                <div class="stundenplanspalte faecher"></div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">15:45 - 17:15</div>
+                                <div class="stundenplanspalte faecher"></div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">17:30 - 19:00</div>
+                                <div class="stundenplanspalte faecher"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donnerstag" id="donnerstag">
+                        <div class="stundenplan">
+                            <div class="stundenplanzeile" id="gruen-schatten-do">
+                                <div class="stundenplanspalte zeiten">Zeiten</div>
+                                <div class="stundenplanspalte faecher" id="fett-machen-do">Donnerstag</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">8:00 - 9:30</div>
+                                <div class="stundenplanspalte faecher"></div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">9:45 - 11:15</div>
+                                <div class="stundenplanspalte faecher">Mathematik 2 | Raum 1/109 | Frau Preissler</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">11:30 - 13:00</div>
+                                <div class="stundenplanspalte faecher"></div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">13:00</div>
+                                <div class="stundenplanspalte faecher">Mittagspause</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">14:00 - 15:30</div>
+                                <div class="stundenplanspalte faecher">Programmieren 2 | Raum 2/201 | Frau Baur</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">15:45 - 17:15</div>
+                                <div class="stundenplanspalte faecher">Programmieren 2 | Raum 2/201 | Frau Baur</div>
+                            </div>
+                            <div class="stundenplanzeile">
+                                <div class="stundenplanspalte zeiten">17:30 - 19:00</div>
+                                <div class="stundenplanspalte faecher">Tutorium Programmieren 2 | Raum 1/014</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="../JavaScript/studium-tabelle.js"></script>
+
+        </section>
+        
+    </div>
+</body>
+
+</html>

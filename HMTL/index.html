@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/index.css'>
+    <link rel="stylesheet" href="../CSS/newsletter.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+    <script src="../JavaScript/newsletter.js" defer></script>
+    <title>Mein Index</title>
+</head>
+
+<body>
+    <main>
+        <section class="hero">
+            <h1><img id="kleiner" src="../ProjektBilder/Fictiogram.png" alt="'FICTIOGRAM'"></h1>
+            <p class="einleitung">
+                Wilkommen auf Dream's Fiktiogram Profil, sch&ouml;n dass du zu uns gefunden hast. <span class="after"></span>
+                Schau dich in Ruhe um. Hier findest du alles Wichtige, was es &uuml;ber Dream zu wissen gibt. <span class="after"></span>
+                Viele Informationen &uuml;ber Dream selbst, sowie nat&uuml;rlich seine Freunde. <span class="after"></span>
+                Nicht zu vergessen sein Studium, welches er im Moment besucht. <br>
+                Du m&ouml;chtest dir gleich alles ansehen? Dann klicke einfach auf den Button hier.
+            </p>
+            <a href="../HMTL/profil.html" class="button einleitung-button hover-button">JETZT LOSLEGEN!</a>
+        </section>
+
+        <section class="angebotsbereich">
+            <div class="icon-zeile">
+                <i class="fa-solid fa-face-smile icon"></i>
+            </div>
+
+            <h2>ALLE SEITEN</h2>
+            <div class="kreiszeile">
+                <div class="kreisbehaelter">
+                    <div class="kreis">
+                        <div class="kreisinhalt">
+                            <i class="fa-regular fa-id-card icon"></i>
+                            <h3>DREAM</h3>
+                            <p class="kreistext"> 
+                                In Dream's Profil erf&auml;hrst du etwas &uuml;ber seine Daten, seine Karriere und sein pers&ouml;nliches Leben.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kreisbehaelter">
+                    <div class="kreis">
+                        <div class="kreisinhalt">
+                            <i class="fa-solid fa-people-group icon"></i>
+                            <h3>FREUNDE</h3>
+                            <p class="kreistext">
+                                Seine Freunde teilen pers&ouml;nliche Infomationen, sowie manche 'schockierende' Besonderheiten.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kreisbehaelter">
+                    <div class="kreis">
+                        <div class="kreisinhalt">
+                            <i class="fa-solid fa-graduation-cap icon"></i>
+                            <h3>STUDIUM</h3>
+                            <p class="kreistext">
+                                Hier finden sich die wichtigsten Infomationen &uuml;ber sein Studium, wie auch einen Studendenplan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="angebotstabelle">
+
+                <div class="angebotszeile">
+                    <div class="angebotsspalte angebotsSeite">1. Seite</div>
+                    <div class="angebotsspalte angebotsname">Alles &uuml;ber Dream</div>
+                    <div class="angebotsspalte angebotsbuttonspalte"> 
+                        <a href="../HMTL/profil.html" class="button angebotsbutton hover-button">Jetzt ansehen</a> 
+                    </div>
+                </div>
+                <div class="angebotszeile">
+                    <div class="angebotsspalte angebotsSeite">2. Seite</div>
+                    <div class="angebotsspalte angebotsname">Info's &uuml;ber Freunde</div>
+                    <div class="angebotsspalte angebotsbuttonspalte"> 
+                        <a href="../HMTL/freunde.html" class="button angebotsbutton hover-button">Jetzt ansehen</a> 
+                    </div>
+                </div>
+                <div class="angebotszeile">
+                    <div class="angebotsspalte angebotsSeite">3. Seite</div>
+                    <div class="angebotsspalte angebotsname">Alles &uuml;bers Studium</div>
+                    <div class="angebotsspalte angebotsbuttonspalte"> 
+                        <a href="../HMTL/studium.html" class="button angebotsbutton hover-button">Jetzt ansehen</a> 
+                    </div>
+                </div>
+                <div class="angebotszeile">
+                    <div class="angebotsspalte angebotsSeite">4. Seite</div>
+                    <div class="angebotsspalte angebotsname">Eigenes Impressum</div>
+                    <div class="angebotsspalte angebotsbuttonspalte"> 
+                        <a href="../HMTL/impressum.html" class="button angebotsbutton hover-button">Jetzt ansehen</a> 
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <i class="fa-solid fa-fire icon"></i>
+        <h2>LISA KEIL</h2>
+        <div id="abonnieren">
+            <button id="btn-newsletter-index" onclick="askMail()">Newsletter abonnieren </button>
+        </div>
+        <address class="footer-zeile">Schellingstr. 24, 70174 Stuttgart</address>
+        <address class="footer-zeile">01234/5678901</address>
+        <address class="footer-zeile">21keli1bif@hft-stuttgart.de</address>
+
+        <div class="social-media-zeile">
+            <a href="https://github.com/" class="social-link" title="Zu GitHub...">
+                <i class="fa-brands fa-square-github icon"></i>
+            </a>
+            <a href="https://twitter.com/" class="social-link" title="Zu Twitter...">
+                <i class="fa-brands fa-square-twitter icon"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="social-link" title="Zu Instagram...">
+                <i class="fa-brands fa-square-instagram icon"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Gehoehrt zum Newsletter-Button-->
+    <div id="askMail">
+        <div id="askMail-content-index" class="askmail-content">
+            <h2>Bitte geben Sie Ihre Mail-Adresse ein: </h2>
+            <input type="email" placeholder="maxmustermann@hft-stuttgart.de" required>
+            <button onclick="closeMail(), showPopup()">Fertig</button>
+        </div>
+    </div>
+    <div id="popup">
+        <div id="popup-content-index" class="popup-content">
+            <h2>Vielen Dank für Ihr Abonnement!</h2>
+            <p>Sie haben unseren Newsletter erfolgreich abonniert.</p>
+            <button onclick="closePopup()">Schlie&szlig;en</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/seiten.css">
+    <link rel="stylesheet" href="../CSS/navigationsleiste.css">
+    <link rel="stylesheet" href="../CSS/newsletter.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+    <script src="../JavaScript/navigationsleiste.js" defer></script>
+    <script src="../JavaScript/newsletter.js" defer></script>
+    <title>Dream Profilseite</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <div id="hauptnavigation">
+                <div class="logobereich">
+                    <a href="../HTML/index.html" class="nav-logo" title="Zurück zum Index!"></a>
+                </div>
+                <div class="navigationsbereich">
+                    <div class="nav-oben">
+                        <a href="mailto:21keli1bif@hft-stuttgart.de" class="nav-link" title="Schreib mir eine E-Mail.">
+                            <i class="fa-solid fa-envelope"></i>
+                            21keli1bif@hft-stuttgart.de
+                        </a>
+                        <div class="nav-socials">
+                            <a href="https://github.com" class="nav-link" title="Zu GitHub..."><i class=" fa-brands fa-square-github"></i></a>
+                            <a href="https://twitter.com" class="nav-link" title="Zu Twitter..."><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://instagram.com" class="nav-link" title="Zu Instagram..."><i class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="nav-unten">
+                        <div class="navigationspunkte">
+                            <a href="../HTML/index.html" class="nav-punkt nav-link">Home</a>
+                            <a href="../HTML/profil.html" class="nav-punkt nav-link aktiv">Profil</a>
+                            <a href="../HTML/freunde.html" class="nav-punkt nav-link">Freunde</a>
+                            <a href="../HTML/studium.html" class="nav-punkt nav-link">Studium</a>
+                            <a href="../HTML/impressum.html" class="nav-punkt nav-link">Impressum</a>
+                        </div>
+                        <div class="nav-abonnieren">
+                            <button onclick="askMail()">Newsletter abonnieren </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="bars-icon" onclick="navigationUmschalten()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Gehoehrt zum Newsletter-Button-->
+    <div id="askMail">
+        <div class="askmail-content">
+            <h2>Bitte geben Sie Ihre Mail-Adresse ein: </h2>
+            <input type="email" placeholder="maxmustermann@hft-stuttgart.de" required>
+            <button onclick="closeMail(), showPopup()">Fertig</button>
+        </div>
+    </div>
+    <div id="popup">
+        <div class="popup-content">
+            <h2>Vielen Dank für Ihr Abonnement!</h2>
+            <p>Sie haben unseren Newsletter erfolgreich abonniert.</p>
+            <button onclick="closePopup()">Schlie&szlig;en</button>
+        </div>
+    </div>
+
+    <div class="hauptbehaelter" id="hauptbehaelterB">
+        <h1> <img id="ueberschrift" src="../ProjektBilder/Dreams-Profil.png" alt="'DREAM'S PROFIL'"> </h1>
+        <div class="padding-lr20">
+            <img src="../ProjektBilder/DreamProfilBild.jpeg" alt="Ein Bild von Dream">
+            <p> 
+                Der Streamer/YouTuber Dream, mit dem B&uuml;rgerlichen Namen Clay, ist 23 Jahre jung und wurde 
+                geboren am 12.August 1999 in den Vereinigte Staaten. Erw&auml;hnt wurde von seiner Familie bislang nur 
+                seine Schwester und seine Katze 'Patches'. Derzeit lebt er in Orlando, Florida, wo er sich zusammen mit 
+                seinen Freunden und Streamer-Kollegen Sapnap und George eine gro&szlig;e Villa teilt.
+                Vom Beruf her ist er ein Streamer und YouTuber, wobei er vor kurzem ein Studium f&uuml;r den Bachelor 
+                f&uuml;r Informatik begonnen hat. Dazu sind seine Hobby's nat&uuml;rlich Streamen bzw. Videospiele und 
+                Songwriting. Auch gesunde Ern&auml;rung und Fitness spielen bei ihm eine Rolle.
+            </p>
+            <p>
+                <Strong>Karriere: </Strong><span class=" after"></span>
+            Dream begann seine Karriere auf der Online-Plattform YouTube im Jahr 2014, mit seinem ersten Video,
+            welches sich auf die beliebte Videospiel-Serie Minecraft konzentrierte.
+            Im Jahr 2019 startete er seinen Twitch-Kanal, auf dem er ebenfalls Minecraft-Content streamt.
+            Dream wurde schnell popul&auml;r auf beiden Plattformen und hat mittlerweile über 31 Millionen
+            Abonnenten auf YouTube und über 6 Millionen Follower auf Twitch. Zus&auml;tzlich beganne er vor
+            1 Jahr seinen Bachelor f&uuml;r Informatik an der HFT-US und besucht aktuell sein zweites Semester.
+            </p>
+            <p> <strong>Besonderes Ereignis: </strong> <span class="after"></span>
+                Infolge des unerfreulichen Todes seines Freundes und Kollegen Technoblade, spendete Dream einen
+                gro&szlig;en Betrag an Forschungen, dessen Ziel es ist Krebs zu heilen.</p>
+                <p style="margin-bottom: 35pt;"></p>
+            </div>
+        <section>
+            <h2>Minecraft Tournaments</h2>
+            <div class="tabellenbehaelter">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">Alle Tournaments</th>
+                        </tr>
+                        <tr>
+                            <th>Tournament</th>
+                            <th>Teammates</th>
+                            <th>Plazierung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MC Championship 6</td>
+                            <td>GeorgeNotFound, Mefs,TheEret.</td>
+                            <td>3rd (20150)</td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 7</td>
+                            <td>GeorgeNotFound, Sapnap, Sylvee</td>
+                            <td>4th (19371) </td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 8</td>
+                            <td>Technoblade, King_Burren, Michaelmcchill</td>
+                            <td>2nd (19147) </td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 9</td>
+                            <td>Fundy, Tubbo, Sylvee</td>
+                            <td>6th (15081)</td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 10</td>
+                            <td>GeorgeNotFound, Solidarity, CaptainPuffy</td>
+                            <td>3rd (20348)</td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 11</td>
+                            <td>GeorgeNotFound, Sapnap, KarlJacobs</td>
+                            <td>2nd (19657)</td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 12</td>
+                            <td>CaptainSparklez, Spifey,Michaelmcchill</td>
+                            <td>5th (17948) </td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 13</td>
+                            <td>Shubble, CaptainSparklez, Dangthatsalongname</td>
+                            <td>3rd (19056)</td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 14</td>
+                            <td>CaptainSparklez, GeorgeNotFound, Quackity</td>
+                            <td>7th (15252) </td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 15</td>
+                            <td>Michaelmcchill, Quackity, Sapnap</td>
+                            <td>4th (3,203)</td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 16</td>
+                            <td>F1NN5TER, BadBoyHalo, SeaPeeKay</td>
+                            <td>4th (3,031) </td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 17</td>
+                            <td>KarlJacobs, TommyInnit, Ponk</td>
+                            <td>7th (16155)</td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 18</td>
+                            <td>awesamdude, Quackity, GeorgeNotFound</td>
+                            <td>5th (17584) </td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 19</td>
+                            <td>Tubbo, Ranboo, Slimecicle</td>
+                            <td>4th (19453)</td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 21</td>
+                            <td>TommyInnit, Sylvee, vGumiho</td>
+                            <td>4th (16518)</td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship 22</td>
+                            <td>GeorgeNotFound, CaptainPuffy, awesamdude</td>
+                            <td>N/A </td>
+                        </tr>
+                        <tr>
+                            <td>MC Championship All Stars</td>
+                            <td>Sapnap, GeorgeNotFound, BadBoyHalo</td>
+                            <td>1st (24064)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <h2> Pers&ouml;nliches Leben</h2>
+            <ul class="padding-lr20">
+                <li>Zitat Dream: <cite>"My name is Dream and I'm a Bitch"</cite></li>
+                <li>Dream gibt sehr wenig über sein pers&ouml;nliches Leben preis.</li>
+                <li>Seine Lieblingsfarbe ist Gr&uuml;n.</li>
+                <li>Sein Liblingssong ist "Invisible String" von Taylor Swift.</li>
+                <li>Er schrieb 2 B&uuml;cher und plannt ein 3 drittes (stand 2019).</li>
+                <li>Er ver&ouml;ffentlichte 3 selbstgeschriebene/animierte Songs: Maske, Roadtrip und Change my
+                    Clothing.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>

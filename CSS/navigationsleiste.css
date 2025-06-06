@@ -1,0 +1,221 @@
+header {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+#hauptnavigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to right, rgb(2, 64, 2), rgb(49, 167, 49));
+    display: flex;
+}
+
+.logobereich {
+    width: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo {
+    background-image: url(ProjektBilder/Dream_Profil.jpg);
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+.navigationsbereich {
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-oben {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 26vw;
+    padding-left: 2%;
+    box-sizing: border-box;
+}
+
+.nav-oben a {
+    color: honeydew;
+}
+
+.nav-link {
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.nav-icon {
+    font-size: 1.2em;
+}
+
+.nav-unten {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(187, 187, 187);
+    clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 0% 100%);
+    padding-left: 2%;
+}
+
+.navigationspunkte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.nav-punkt {
+    color: black;
+}
+
+.nav-punkt:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-punkt.aktiv {
+    font-weight: bolder;
+    color: green;
+}
+
+.nav-abonnieren {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24vw;
+}
+
+.nav-abonnieren button{
+    color: honeydew;
+    font-size: 16px;
+    background-image: linear-gradient(#d3cdc5, #3a342c);
+    border: none;
+    border-radius: 10%/50%;
+    box-shadow: inset 0px 0px 10px darkslategrey;
+    padding: 5px 15px;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.nav-abonnieren button:hover{
+    box-shadow: inset 0px 0px 10px black, 0px 0px 10px mediumspringgreen;
+}
+
+.bars-icon {
+    display: none;
+}
+
+/*Damit die Ueberschrift bei wechselnden "Tablet"Groessen nicht in navbar schneidet*/
+@media (min-width: 600px) and (max-width: 900px) {
+
+    body {
+        padding-top: 50px;
+    }
+
+    .nav-unten{
+        display: contents;
+        height: fit-content;
+    }
+
+    .nav-abonnieren {
+        width: 50vw;
+        padding-bottom: 10px;
+    }
+
+    .nav-oben {
+        width: 80%;
+        box-sizing: content-box;
+    }
+
+    .nav-link {
+        padding: 12px 8px;
+    }
+
+    .nav-punkt.aktiv {
+        font-weight: bolder;
+        color: whitesmoke;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .nav-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .nav-abonnieren button:hover{
+        box-shadow: inset 0px 0px 10px black, 0px 0px 10px silver;
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding-bottom: 70px;
+    }
+
+    #hauptnavigation {
+        flex-direction: column;
+        height: 50px;
+        box-shadow: 2px 2px 5px darkslategray;
+    }
+
+    .nav-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #hauptnavigation div {
+        width: 100%;
+    }
+
+    .navigationsbereich {
+        display: none;
+    }
+
+    .nav-oben {
+        display: none;
+    }
+
+    .nav-unten {
+        display: none;
+    }
+
+    .bars-icon {
+        display: block;
+        position: absolute;
+        top: 3px;
+        right: 12px;
+        font-size: 30px;
+        color: honeydew;
+        user-select: none;
+    }
+
+    .navigation-geoeffnet .navigationsbereich {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .navigation-geoeffnet .nav-unten {
+        display: flex;
+        flex-direction: column-reverse;
+        border-bottom: 1px solid honeydew;
+    }
+
+    .navigation-geoeffnet .navigationspunkte {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

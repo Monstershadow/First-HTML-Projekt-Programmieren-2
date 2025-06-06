@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/seiten.css">
+    <link rel="stylesheet" href="../CSS/navigationsleiste.css">
+    <link rel="stylesheet" href="../CSS/newsletter.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+    <script src="../JavaScript/navigationsleiste.js" defer></script>
+    <script src="../JavaScript/newsletter.js" defer></script>
+    <title>Dream's Freunde</title>
+</head>
+
+<body>
+    <header>
+        <div id="hauptnavigation">
+            <div class="logobereich">
+                <a href="../HTML/index.html" class="nav-logo" title="Zurück zum Index!"></a>
+            </div>
+            <div class="navigationsbereich">
+                <div class="nav-oben">
+                    <a href="mailto:21keli1bif@hft-stuttgart.de" class="nav-link"  title="Schreib mir eine E-Mail.">
+                        <i class="fa-solid fa-envelope"></i>
+                        21keli1bif@hft-stuttgart.de
+                    </a>
+                    <div class="nav-socials">
+                        <a href="https://github.com" class="nav-link" title="Zu GitHub..."><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://twitter.com" class="nav-link" title="Zu Twitter..."><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://instagram.com" class="nav-link" title="Zu Instagram..."><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="nav-unten">
+                    <div class="navigationspunkte">
+                        <a href="../HTML/index.html" class="nav-punkt nav-link">Home</a>
+                        <a href="../HTML/profil.html" class="nav-punkt nav-link">Profil</a>
+                        <a href="../HTML/freunde.html" class="nav-punkt nav-link aktiv">Freunde</a>
+                        <a href="../HTML/studium.html" class="nav-punkt nav-link">Studium</a>
+                        <a href="../HTML/impressum.html" class="nav-punkt nav-link">Impressum</a>
+                    </div>
+                    <div class="nav-abonnieren">
+                        <button onclick="askMail()">Newsletter abonnieren </button>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="bars-icon" onclick="navigationUmschalten()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Gehoehrt zum Newsletter-Button-->
+    <div id="askMail">
+        <div class="askmail-content">
+            <h2>Bitte geben Sie Ihre Mail-Adresse ein: </h2>
+            <input type="email" placeholder="maxmustermann@hft-stuttgart.de" required>
+            <button onclick="closeMail(), showPopup()">Fertig</button>
+        </div>
+    </div>
+    <div id="popup">
+        <div class="popup-content">
+            <h2>Vielen Dank für Ihr Abonnement!</h2>
+            <p>Sie haben unseren Newsletter erfolgreich abonniert.</p>
+            <button onclick="closePopup()">Schlie&szlig;en</button>
+        </div>
+    </div>
+
+    <div class="hauptbehaelter" id="hauptbehaelterB">
+        <h1> <img id="ueberschrift" src="../ProjektBilder/Seine-Freunde.png" alt="'SEINE FREUNDE'"> </h1>
+        <div class="padding-lr20">
+            <img src="../ProjektBilder/Dream-Team.jpg" alt="'Deam und ein paar seiner Freunde'">     
+            <p> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit perspiciatis impedit, quaerat pariatur, cumque quam reiciendis officia repudiandae et velit dolorum animi earum cupiditate sit dolore. Sunt, in? Quae consectetur natus dignissimos odit optio minima nihil, quasi error rem vel.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio natus aperiam esse impedit ipsa atque libero praesentium nam reprehenderit mollitia veniam, enim quam? Ex autem suscipit cupiditate, harum ducimus animi odio at itaque odit voluptate dolorum optio nobis maxime assumenda!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim blanditiis error delectus placeat quidem recusandae vel tempora obcaecati ipsam. Velit! 
+            </p>
+            <p style="margin-bottom: 30pt;"></p>
+        </div>
+        <section>
+            <h2>GeorgeNotFound</h2>
+            <img src="../ProjektBilder/George_Profil.jpg" alt="'Ein Bild von George'"> 
+            <p class=" padding-lr20">
+                Der Streamer/YouTuber GeorgeNotFound, mit dem B&uuml;rgerlichen Namen George Davidson, ist 26 Jahre jung und
+                wurde geboren am 1.September 1996 im Vereinigtes K&ouml;nigreich. Erw&auml;hnt wurde von seiner Familie bislang
+                seine Schwester und seine 2 Katzen. Davor hatte er eine Katze, welche er liebvoll 'Pooper' nannte.
+                Diese ist allerdings Verstorben.
+            </p>
+            <p class=" padding-lr20">
+                Derzeit lebt er in Orlando, Florida, zusammen mit Dream und Sapnap.
+                Vom Beruf her ist er ein Streamer und YouTuber, wobei auch er seit kurzer Zeit ein Studium f&uuml;r den
+                Bachelor f&uuml;r Informatik bestreitet. Seine Hobby's sind Streamen bzw. Videospiele und Gitarre spielen.
+            </p>
+            <div style="padding-top: 2%;">
+                <ul class="padding-lr20">
+                    <li>Zitat George: <cite> "It is not my fault, that I'm colorblind."</cite></li>
+                    <li>Auch über sein pers&ouml;nliches Leben gibt es wenig Informationen. </li>
+                    <li>George ist Dream's bester Freund.</li>
+                    <li>Ist vor kurzem zu Dream und Sapnap nach Amerika gezogen.</li>
+                    <li>Ist ein gro&szlig;er Fan von Musik.</li>
+                    <li>Leidet an einer Rot-Gr&uuml;n-Farbenblinheit.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Sapnap</h2>
+            <img src="../ProjektBilder/Sapnap_Profil.jpg" alt="'Ein Bild von Sapnap'"> 
+            <p class=" padding-lr20">
+                Der Streamer/YouTuber Sapnap, mit dem B&uuml;rgerlichen Namen Nicholas, ist 22 Jahre jung und
+                wurde geboren am 1.M&auml;rz 2001 in den Vereinigtes Staaten. Von seiner Familie ist bekannt, 
+                dass er 2 Schwestern, eine Stiefmutter, 3 Katzen und einen Hund hat. 
+            </p>
+            <p class=" padding-lr20">
+                Derzeit lebt er in Orlando, Florida, zusammen mit Dream und George. 
+                Vom Beruf her ist er ein Streamer und YouTuber, welcher ebenfalls ein Studium f&uuml;r den Bachelor
+                f&uuml;r Informatik begann. Seine Hobby's sind Streamen bzw. Videospiele, sowie Sport und Fitness.
+            </p>
+            <div style="padding-top: 3%;">
+                <ul class="padding-lr20">
+                    <li>Zitat Sapnap: <cite>If you call me Snapmap again, we're gonna have issues!"</cite></li>
+                    <li>Er teilt nicht gerne etwas &uuml;ber sein pers&ouml;nliches Leben. </li>
+                    <li>Er ist Dream's anderer bester Freund.</li>
+                    <li>Er war bereits vor George Dream's Mitbewohner.</li>
+                    <li>Ist in der Lage Geige zu spielen.</li>
+                    <li>Einmal gab er bekannt, dass er die Band Power gr&uuml;nde (stand: 2021)</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Technoblade</h2>
+            <img src="../ProjektBilder/Technoblade_Profil.jpg" alt="'Ein Bild von Technoblade'"ß> 
+            <p class=" padding-lr20">
+                    Der Streamer/YouTuber Technoblade, mit dem B&uuml;rgerlichen Namen Alexander, war 22 Jahre jung und
+                    wurde geboren am 1.Juni 1999 in den Vereinigtes Staaten. Seine Familie bestand aus seinen Eltern(getrennt), 
+                    3 Schwestern, einen Bruder, und einem Hund. Leider ist Technoblade im juni 2022 an Krebs Verstorben.
+                </p>
+                <p class=" padding-lr20">
+                    Zuvor war er vom Beruf her ein Streamer und YouTuber. Seine Hobby's waren Streamen bzw. Videospiele, aber 
+                    auch Lesen und Zeichnen.
+                </p>
+                <img src="../ProjektBilder/Techno_Schwein.jpg" alt="'Ein Bild von Techno_Schwein mit Krone'" width= "150" height="100"> 
+                <p class=" padding-lr20">
+                    <strong>Annotation: </strong><span class="after"></span>
+                    Mojang, die Erfinder von Minecraft, f&uuml;gten im Spiel dem Schwein eine Krone hinzu, 
+                    in ehren Technoblade's. <span class="after"></span>
+                    Auch gab es ein zeitbegrenztes Memorial im Minecraft Start-Menu. 
+                    Es wurde allerdings bald darauf entfernt. 
+                </p>
+                <div style="padding-top: 3%;">
+                    <ul class="padding-lr20">
+                        <li>Zitat Technoblade: <cite> "Technoblade never dies!"</cite></li>
+                        <li>Er war ein guter Freund und Rivale von Dream.</li>
+                        <li>Er war ein gro&szlig;er Fan Comics und Animes.</li>
+                        <li>Als er noch j&uuml;nger war, nahm Fecht-Unterricht.</li>
+                    </ul>
+                </div>
+        </section>
+    </div>
+</body>
+
+</html>

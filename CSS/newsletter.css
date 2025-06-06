@@ -1,0 +1,120 @@
+#askMail, #popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#askMail.showMail, #popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.askmail-content, .popup-content {
+    background-color: rgb(187, 187, 187);
+    padding: 6px 20px 15px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.askmail-content h2, .popup-content h2 {
+    margin-bottom: 15px;
+    border-radius: 30px/50%;
+}
+
+.askmail-content p, .popup-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#askMail-content-index, #popup-content-index {
+    background-color: rgb(187, 187, 187);
+    padding: 15px 25px 20px 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#askMail-content-index h2, #popup-content-index h2 {
+    background: limegreen;
+    color: honeydew;
+    text-align: center;
+    text-decoration: none;
+    padding: 1%;
+    box-shadow: 2px 2px 5px darkslategray;
+    text-shadow: 1px 1px 1px;
+    border-radius: 40px/50%;
+    font-size: 30px;
+}
+
+#popup-content-index p {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#askMail-content-index input {
+    font-size: 17px;
+    width: 60%;
+}
+
+input {
+    font-size: 15px;
+    width: 50%;
+}
+
+.askmail-content button {
+    color: honeydew;
+    font-size: 16px;
+    background-image: linear-gradient(#d3cdc5, #3a342c);
+    border: none;
+    border-radius: 30%/50%;
+    box-shadow: inset 0px 0px 10px darkslategrey;
+    margin-left: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.popup-content button {
+    color: honeydew;
+    font-size: 16px;
+    background-image: linear-gradient(#d3cdc5, #3a342c);
+    border: none;
+    border-radius: 20%/50%;
+    box-shadow: inset 0px 0px 10px darkslategrey;
+    margin-left: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+#abonnieren {
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-newsletter-index {
+    color: honeydew;
+    font-size: 20px;
+    background-image: linear-gradient(#d3cdc5, #3a342c);
+    border: none;
+    border-radius: 10%/50%;
+    box-shadow: inset 0px 0px 10px darkslategrey;
+    text-shadow: 1px 1px 5px black;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.askmail-content button:hover, .popup-content button:hover, #btn-newsletter-index:hover {
+    box-shadow: inset 0px 0px 10px black, 0px 0px 7px mediumspringgreen;
+}

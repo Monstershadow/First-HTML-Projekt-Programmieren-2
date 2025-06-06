@@ -1,0 +1,90 @@
+.stundenplan-container{
+    margin: 15px auto;
+    background: rgb(187, 187, 187);
+    width: 90%;
+    height: 400px;
+}
+
+.buttons{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.btn-sp{
+    border: none;
+    border-radius: 15%/50%;
+    box-shadow: inset 0px 0px 10px darkslategrey;
+    color: white;
+    width: fit-content;
+    height: 30px;
+    font-size: 16px;
+    background-image: linear-gradient(#d3cdc5, #3a342c);
+}
+
+.buttons button:hover{
+    background: mediumseagreen; 
+}
+
+.blocks{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.montag{
+    width: 100%;
+    height: auto;
+}
+
+.dienstag{
+    width: 100%;
+    height: auto;
+}
+
+.mittwoch{
+    width: 100%;
+    height: auto;
+}
+
+.donnerstag{
+    width: 100%;
+    height: auto;
+}
+
+.stundenplan{
+    flex-direction: column;
+    font-size: max(0.9em, 1.0vw);
+}
+
+.stundenplanzeile{
+    display: flex;
+    padding: 2%;
+    align-items: center;
+}
+
+.stundenplanzeile:nth-child(2n){ /* jedes 2 Element betroffen*/
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.stundenplanzeile:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.zeiten{
+    width: 25%;
+    font-weight: bold;
+}
+
+.faecher{
+    width: 70%;
+}
+
+#fett-machen-mo, #fett-machen-di, #fett-machen-mi, #fett-machen-do{
+    font-weight: bold;
+}
+
+#gruen-schatten-mo, #gruen-schatten-di, #gruen-schatten-mi, #gruen-schatten-do{
+    background-color: rgba(0, 197, 0, 0.223);
+}
+
