@@ -1,5 +1,5 @@
 # First-HTML-Projekt-Programmieren-2
-Dieses Projekt wurde im Rahmen von Programmieren 2 erstellt.
+Dieses Projekt war die erste große Website, welche im Rahmen von Programmieren 2 erstellt und benotet wurde.
 
 Rahmenbedingungen:
   * Das Thema ist freigestellt.
